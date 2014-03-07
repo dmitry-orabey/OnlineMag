@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>JellyFiz shop</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!--[if lte IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/adaptive.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/bxslider.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/jscrollpane.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/fancybox.css" media="screen" />
+		
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+<body class="shop-page">
+	<header>
+		<div class="top-panel">
+			<div class="wrapper clear">
+				<a href="#" class="logo">
+					<img src="images/logo.png" alt="">
+				</a>
+				<div class="search-form">
+					<form action="">
+						<input type="text" name="" size="" value="Enter search keyword" onblur="if (this.value == '') {this.value = 'Enter search keyword';}" onfocus="if (this.value == 'Enter search keyword') {this.value = '';}"/>
+						<input type="submit" value=""/>
+					</form>
+				</div>
+				<div class="shop-authorization">
+					<a id="login" href="#sign-in" class="login">LOG IN</a>
+					<a href="" class="shop-cart">CART</a>
+				</div>	
+			</div>
+		</div>
+		<div class="mainmenu">
+			<div class="wrapper clear">
+				<nav>
+					<ul>
+						<li class="current"><a href="#">Jewellery</a></li>
+						<li><a href="#">Sarees</a></li>
+						<li><a href="#">Salwars</a></li>
+						<li><a href="#">Bridal</a></li>
+						<li><a href="#">Lehengas</a></li>
+						<li><a href="#">Clothing</a></li>
+						<li><a href="#">Designers</a></li>
+					</ul>
+				</nav>
+				<div class="blog-links">
+					<ul>
+						<li><a href="#">Sell</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="wrapper clear">
+			<div class="breadcrumbs clear">
+				<a href="#">Home</a> > <a href="#">Jewellery</a>
+				<div class="sort">
+					SORT BY
+					<select>
+						<option>Пункт 1</option>
+						<option>Пункт 2</option>
+					</select>
+				</div>
+			</div>
+			<aside class="sidebar-left">
+				<div class="filter-widget">
+					<h3>REFINE BY <a href="#">Clear all</a></h3>
+					<div class="filter-item">
+						<a class="item-title" href="#">Product Type</a>
+						<div class="filter-input-box">
+							<label class="clear" for="checkbox1">
+								<input id="checkbox1" type="checkbox" name="" value="">
+								<span></span>
+								Earrings	
+							</label>
+							<label class="clear" for="checkbox2">
+								<input id="checkbox2" type="checkbox" name="" value="">
+								<span></span>
+								Bracelets	
+							</label>
+							<label class="clear" for="checkbox3">
+								<input id="checkbox3" type="checkbox" name="" value="">
+								<span></span>
+								Necklaces	
+							</label>
+							<label class="clear" for="checkbox4">
+								<input id="checkbox4" type="checkbox" name="" value="">
+								<span></span>
+								Pendant	
+							</label>
+							<label class="clear" for="checkbox5">
+								<input id="checkbox5" type="checkbox" name="" value="">
+								<span></span>
+								Rings	
+							</label>
+							<label class="clear" for="checkbox6">
+								<input id="checkbox6" type="checkbox" name="" value="">
+								<span></span>
+								Sets	
+							</label>
+							<label class="clear" for="checkbox7">
+								<input id="checkbox7" type="checkbox" name="" value="">
+								<span></span>
+								Rings	
+							</label>
+							<label class="clear" for="checkbox8">
+								<input id="checkbox8" type="checkbox" name="" value="">
+								<span></span>
+								Earrings	
+							</label>
+							<label class="clear" for="checkbox9">
+								<input id="checkbox9" type="checkbox" name="" value="">
+								<span></span>
+								Bracelets	
+							</label>
+							<label class="clear" for="checkbox10">
+								<input id="checkbox10" type="checkbox" name="" value="">
+								<span></span>
+								Necklaces	
+							</label>
+							<label class="clear" for="checkbox11">
+								<input id="checkbox11" type="checkbox" name="" value="">
+								<span></span>
+								Pendant	
+							</label>
+							<label class="clear" for="checkbox12">
+								<input id="checkbox12" type="checkbox" name="" value="">
+								<span></span>
+								Rings	
+							</label>
+						</div>
+					</div>
+					<div class="filter-item">
+						<a class="item-title" href="#">Price Range</a>
+						<div class="price-range-box clear">
+							<div id="price-range"></div>
+							<div class="price-min">Rs <input id="price-min" type="text" name="" size="" value="0"/></div>
+							<div class="price-max">Rs <input id="price-max" type="text" name="" size="" value="10000"/></div>
+						</div>
+						
+					</div>
+					<div class="filter-item">
+						<a class="item-title" href="#">Color</a>
+						<div class="color-wrap clear">
+							<label class="clear" for="checkbox100">
+								<input id="checkbox100" type="checkbox" name="" value="">
+								<span></span>
+								Beige	
+							</label>
+							<label class="clear" for="checkbox101">
+								<input id="checkbox101" type="checkbox" name="" value="">
+								<span></span>
+								Black	
+							</label>
+							<label class="clear" for="checkbox102">
+								<input id="checkbox102" type="checkbox" name="" value="">
+								<span></span>
+								Blue	
+							</label>
+							<label class="clear" for="checkbox103">
+								<input id="checkbox103" type="checkbox" name="" value="">
+								<span></span>
+								Brown	
+							</label>
+							<label class="clear" for="checkbox104">
+								<input id="checkbox104" type="checkbox" name="" value="">
+								<span></span>
+								Green	
+							</label>
+							<label class="clear" for="checkbox105">
+								<input id="checkbox105" type="checkbox" name="" value="">
+								<span></span>
+								Gold	
+							</label>
+							<label class="clear" for="checkbox106">
+								<input id="checkbox106" type="checkbox" name="" value="">
+								<span></span>
+								Multi	
+							</label>
+							<label class="clear" for="checkbox107">
+								<input id="checkbox107" type="checkbox" name="" value="">
+								<span></span>
+								Grey	
+							</label>
+							<label class="clear" for="checkbox108">
+								<input id="checkbox108" type="checkbox" name="" value="">
+								<span></span>
+								Orange	
+							</label>
+							<label class="clear" for="checkbox109">
+								<input id="checkbox109" type="checkbox" name="" value="">
+								<span></span>
+								Navy
+							</label>
+							<label class="clear" for="checkbox110">
+								<input id="checkbox110" type="checkbox" name="" value="">
+								<span></span>
+								Purple
+							</label>
+							<label class="clear" for="checkbox111">
+								<input id="checkbox111" type="checkbox" name="" value="">
+								<span></span>
+								Pink	
+							</label>
+							<label class="clear" for="checkbox112">
+								<input id="checkbox112" type="checkbox" name="" value="">
+								<span></span>
+								Silver	
+							</label>
+							<label class="clear" for="checkbox113">
+								<input id="checkbox113" type="checkbox" name="" value="">
+								<span></span>
+								Red	
+							</label>
+							<label class="clear" for="checkbox114">
+								<input id="checkbox114" type="checkbox" name="" value="">
+								<span></span>
+								White	
+							</label>
+							<label class="clear" for="checkbox115">
+								<input id="checkbox115" type="checkbox" name="" value="">
+								<span></span>
+								Yellow
+							</label>
+						</div>
+					</div>
+					<div class="filter-item">
+						<a class="item-title" href="#">Designer</a>
+						<div class="filter-input-box vertical-only">
+							<label class="clear" for="checkbox31">
+								<input id="checkbox31" type="checkbox" name="" value="">
+								<span></span>
+								Designer1	
+							</label>
+							<label class="clear" for="checkbox32">
+								<input id="checkbox32" type="checkbox" name="" value="">
+								<span></span>
+								Designer2	
+							</label>
+							<label class="clear" for="checkbox33">
+								<input id="checkbox33" type="checkbox" name="" value="">
+								<span></span>
+								Designer3
+							</label>
+							<label class="clear" for="checkbox34">
+								<input id="checkbox34" type="checkbox" name="" value="">
+								<span></span>
+								Designer4	
+							</label>
+							<label class="clear" for="checkbox35">
+								<input id="checkbox35" type="checkbox" name="" value="">
+								<span></span>
+								Designer5	
+							</label>
+							<label class="clear" for="checkbox36">
+								<input id="checkbox36" type="checkbox" name="" value="">
+								<span></span>
+								Designer6
+							</label>
+							<label class="clear" for="checkbox37">
+								<input id="checkbox37" type="checkbox" name="" value="">
+								<span></span>
+								Designer7
+							</label>
+							<label class="clear" for="checkbox38">
+								<input id="checkbox38" type="checkbox" name="" value="">
+								<span></span>
+								Designer8
+							</label>
+							<label class="clear" for="checkbox39">
+								<input id="checkbox39" type="checkbox" name="" value="">
+								<span></span>
+								Designer9
+							</label>
+							<label class="clear" for="checkbox40">
+								<input id="checkbox40" type="checkbox" name="" value="">
+								<span></span>
+								Designer10
+							</label>
+							<label class="clear" for="checkbox41">
+								<input id="checkbox41" type="checkbox" name="" value="">
+								<span></span>
+								Designer11
+							</label>
+							<label class="clear" for="checkbox42">
+								<input id="checkbox42" type="checkbox" name="" value="">
+								<span></span>
+								Designer12
+							</label>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="content-right">
+				<div class="shop-item-box clear">
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img1.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img2.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img3.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img4.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img5.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img6.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img1.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img2.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img3.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img4.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img5.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+					<div class="shop-item">
+						<div class="shop-item-img">
+							<a href="#">
+								<img src="images/content/product-img6.png" alt="">
+							</a>	
+							<div class="share-links">
+								<a href="#" class="fv"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="pi"></a>
+							</div>
+						</div>
+						<div class="shop-item-meta clear">
+							<h3>
+								<a href="#">Ring Flower</a>
+							</h3>
+							<span class="designer">by ALDO</span>	
+							<span class="price">Rs 500</span>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul>	
+						<li class="prev"><a href="#"></a></li>
+						<li class="current">1</li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li class="three_dots">...</li>
+						<li class='last_num'><a href="">30</a></li>
+						<li class="next"><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper clear">
+			<a class="footer-logo" href="#"></a>
+			<ul class="footer-menu clear">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			<div class="social-links claer">
+				<a href="#" class="tw"></a>
+				<a href="#" class="fb"></a>
+				<a href="#" class="pi"></a>
+				<a href="#" class="in"></a>
+				<a href="#" class="gp"></a>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="wrapper">
+				<p>&copy; Copyright 2014 JellyFiz</p>
+			</div>
+		</div>
+	</footer>
+	<div id="sign-in" class="modal-window" style="display:none;">
+		<div class="modal-header clear">
+			<a id="join-now-link" href="#join-now">Join Now</a>
+			<a class="current sign-in" id="sign-in" href="">Sign In</a>
+		</div>
+		<div class="modal-input-box">
+			<form action="#">
+				<input class="sign-in-user" type="text" name="" size="" value="" placeholder="Username" />
+				<input class="sign-in-pass" type="password" name="" size="" value="" placeholder="Password" />
+				<input class="sign-in-submit" type="submit" value="SIGN IN"/>	
+			</form>
+			<div class="sign-in-links">
+				<p><a href="#">Resend the confirmation email</a></p>
+				<p><a href="#">Reset your password?</a></p>
+				<p><a href="#">Manually confirm your account</a></p>	
+			</div>
+		</div>
+		<div class="fb-sing-in">
+			<div class="or">or</div>
+			<a href="#">Sign in with Facebook</a>
+		</div>
+	</div>
+	<div id="join-now" class="modal-window" style="display:none;">
+		<div class="modal-header clear">
+			<a class="current join-now" id="join-now" href="#join-now">Join Now</a>
+			<a id="sign-in-link" href="#sign-in">Sign In</a>
+		</div>
+		<div class="modal-input-box">
+			<form action="#">
+				<input class="join-now-user" type="text" name="" size="" value="" placeholder="Username" />
+				<p>If you are selling this will also be your store's web address i.e. http://yourname.jellyfiz.com</p>
+				<input class="join-now-pass" type="password" name="" size="" value="" placeholder="Password" />
+				<p>Min 6 characters</p>
+				<input class="join-now-pass" type="password" name="" size="" value="" placeholder="Retype your password" />
+				<p>We'll never ask you for your password in an email. Passwords are case sensitive</p>
+				<input class="join-now-email" type="email" name="" size="" value="" placeholder="Email" />
+				<input class="join-now-retype-email" type="email" name="" size="" value="" placeholder="Retype your email" />
+
+				<input class="join-now-submit" type="submit" value="SIGN IN"/>
+				<p>By clicking Submit, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>	
+			</form>
+		</div>
+		<div class="fb-sing-in">
+			<div class="or">or</div>
+			<a href="#">Sign in with Facebook</a>
+		</div>
+	</div>
+	<div class="fb-tab">
+		<img src="images/content/3.png" alt="">
+	</div>
+</body>
+</html>
