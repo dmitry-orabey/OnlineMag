@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>JellyFiz Shopping cart</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!--[if lte IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/adaptive.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/bxslider.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/jscrollpane.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/fancybox.css" media="screen" />
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+<body class="cart">
+	<header>
+		<div class="top-panel">
+			<div class="wrapper clear">
+				<a href="#" class="logo">
+					<img src="images/logo.png" alt="">
+				</a>
+				<div class="search-form">
+					<form action="">
+						<input type="text" name="" size="" value="Enter search keyword" onblur="if (this.value == '') {this.value = 'Enter search keyword';}" onfocus="if (this.value == 'Enter search keyword') {this.value = '';}"/>
+						<input type="submit" value=""/>
+					</form>
+				</div>
+				<div class="shop-authorization">
+					<a id="login" href="#sign-in" class="login">LOG IN</a>
+					<a href="" class="shop-cart">CART</a>
+				</div>	
+			</div>
+		</div>
+		<div class="mainmenu">
+			<div class="wrapper clear">
+				<nav>
+					<ul>
+						<li><a href="#">Jewellery</a></li>
+						<li><a href="#">Sarees</a></li>
+						<li><a href="#">Salwars</a></li>
+						<li><a href="#">Bridal</a></li>
+						<li><a href="#">Lehengas</a></li>
+						<li><a href="#">Clothing</a></li>
+						<li><a href="#">Designers</a></li>
+					</ul>
+				</nav>
+				<div class="blog-links">
+					<ul>
+						<li><a href="#">Sell</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="wrapper clear">
+			<div class="breadcrumbs clear">
+				<a href="#">Home</a> > <a href="#">Shopping cart</a>
+			</div>
+			<h2 class="page-title">SHOPPING CART</h2>
+			<div class="shopping-cart">
+				<form action="" class="clear">
+					<div class="cart-wrap">
+						<div class="designer-link">
+							Pick from <a href="#">HMBRIDALLEHENGA</a>
+						</div>
+						<div class="cart-head-wrap clear">
+							<div class="cart-head clear">
+								<span>Product name</span>
+								<span>Price</span>
+								<span>Qty</span>
+								<span>Subtotal</span>
+							</div>
+						</div>
+						<div class="cart-item clear">
+							<a href="#" class="cart-item-img">
+								<img src="images/content/cart-item.png" alt="">
+							</a>
+							<div class="scell">
+								<div class="cart-item-info clear">
+									<div class="cart-item-desc">
+										<p>D.No.1148/45 lehenga having mango nakshi and golden with dardogi work</p>
+										<p>Size: General</p>
+									</div>
+									<div class="cart-item-price">
+										13800 Rs
+									</div>
+									<div class="cart-item-qty">
+										<select>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="cart-item-subtotal">
+										13800 Rs
+									</div>
+									<a class="remove-item" href="#"></a>
+								</div>
+								<div class="note-for-designer">
+									<p>Note to HMBRIDALLEHENGA</p>
+									<textarea name="" id="" cols="30" rows="10"></textarea>
+								</div>
+								<a href="#" class="update-cart">Update Shopping Cart</a>
+							</div>
+						</div>
+						<div class="cart-item clear">
+							<a href="#" class="cart-item-img">
+								<img src="images/content/cart-item2.png" alt="">
+							</a>
+							<div class="scell">
+								<div class="cart-item-info clear">
+									<div class="cart-item-desc">
+										<p>D.No.1148/45 lehenga having mango nakshi and golden with dardogi work</p>
+										<p>Size: General</p>
+									</div>
+									<div class="cart-item-price">
+										13800 Rs
+									</div>
+									<div class="cart-item-qty">
+										<select>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="cart-item-subtotal">
+										13800 Rs
+									</div>
+									<a class="remove-item" href="#"></a>
+								</div>
+								<div class="note-for-designer">
+									<p>Note to HMBRIDALLEHENGA</p>
+									<textarea name="" id="" cols="30" rows="10"></textarea>
+								</div>
+								<a href="#" class="update-cart">Update Shopping Cart</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="continue-shopping">CONTINUE SHOPPING</a>
+					<div class="cart-subtotal clear">
+						<div class="subtotal-value-wrap">
+							Subtotal <div class="subtotal-value">Rs 27600,00</div>
+						</div>
+						<input type="submit" value="CHECKOUT"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper clear">
+			<a class="footer-logo" href="#"></a>
+			<ul class="footer-menu clear">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			<div class="social-links claer">
+				<a href="#" class="tw"></a>
+				<a href="#" class="fb"></a>
+				<a href="#" class="pi"></a>
+				<a href="#" class="in"></a>
+				<a href="#" class="gp"></a>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="wrapper">
+				<p>&copy; Copyright 2014 JellyFiz</p>
+			</div>
+		</div>
+	</footer>
+	<div id="sign-in" class="modal-window" style="display:none;">
+		<div class="modal-header clear">
+			<a id="join-now-link" href="#join-now">Join Now</a>
+			<a class="current sign-in" id="sign-in" href="">Sign In</a>
+		</div>
+		<div class="modal-input-box">
+			<form action="#">
+				<input class="sign-in-user" type="text" name="" size="" value="" placeholder="Username" />
+				<input class="sign-in-pass" type="password" name="" size="" value="" placeholder="Password" />
+				<input class="sign-in-submit" type="submit" value="SIGN IN"/>	
+			</form>
+			<div class="sign-in-links">
+				<p><a href="#">Resend the confirmation email</a></p>
+				<p><a href="#">Reset your password?</a></p>
+				<p><a href="#">Manually confirm your account</a></p>	
+			</div>
+		</div>
+		<div class="fb-sing-in">
+			<div class="or">or</div>
+			<a href="#">Sign in with Facebook</a>
+		</div>
+	</div>
+	<div id="join-now" class="modal-window" style="display:none;">
+		<div class="modal-header clear">
+			<a class="current join-now" id="join-now" href="#join-now">Join Now</a>
+			<a id="sign-in-link" href="#sign-in">Sign In</a>
+		</div>
+		<div class="modal-input-box">
+			<form action="#">
+				<input class="join-now-user" type="text" name="" size="" value="" placeholder="Username" />
+				<p>If you are selling this will also be your store's web address i.e. http://yourname.jellyfiz.com</p>
+				<input class="join-now-pass" type="password" name="" size="" value="" placeholder="Password" />
+				<p>Min 6 characters</p>
+				<input class="join-now-pass" type="password" name="" size="" value="" placeholder="Retype your password" />
+				<p>We'll never ask you for your password in an email. Passwords are case sensitive</p>
+				<input class="join-now-email" type="email" name="" size="" value="" placeholder="Email" />
+				<input class="join-now-retype-email" type="email" name="" size="" value="" placeholder="Retype your email" />
+
+				<input class="join-now-submit" type="submit" value="SIGN IN"/>
+				<p>By clicking Submit, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>	
+			</form>
+		</div>
+		<div class="fb-sing-in">
+			<div class="or">or</div>
+			<a href="#">Sign in with Facebook</a>
+		</div>
+	</div>
+	<div class="fb-tab">
+		<img src="images/content/3.png" alt="">
+	</div>
+</body>
+</html>
