@@ -211,6 +211,16 @@ $(document).ready(function(){
 		var fullImgHref = $(this).data("img-href");
 		$("#zoom-img-modal").find("img").attr("src",fullImgHref);
 	});
+
+	$(".tabs a").on("click",function(e){
+    	e.preventDefault();
+    	if ($(this).hasClass("current")) {
+
+    	} else {
+    		$(this).closest(".tabs").find("a.current").removeClass("current");
+    		$(this).addClass("current");
+    	}
+    });
 	
 });
 })(jQuery);	
